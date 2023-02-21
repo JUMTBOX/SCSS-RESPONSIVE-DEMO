@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  padding: 5vh 5vw;
+  border-bottom: 1px solid #999;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 a {
+  font: bold 36px/50px "Mynerve";
+  color: #ffffff;
+}
+header #snb {
+  display: none;
+}
+header .btn-menu {
+  display: none;
+  font-size: 36px;
+  color: #ffffff;
+}
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0 40px;
+}
+header #gnb li a {
+  font: bold 20px/1 "Mynerve";
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0 20px;
+}
+header .sns li a {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+figure {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0.9;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+figure .text {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+figure .text p {
+  font: normal 8vw/1 "Mynerve";
+  color: #ffffff;
+}
+figure .text ul {
+  display: flex;
+  margin-top: 30px;
+}
+figure .text ul li {
+  margin: 0 30px;
+}
+figure .text ul li i {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+figure .text ul li strong {
+  font: 14px/1 "Mynerve";
+  letter-spacing: 1px;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 8vh;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  font: 16px/1 "Mynerve";
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 968px) {
+  header {
+    border-bottom: none;
+  }
+  header #gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .btn-menu {
+    display: block;
+  }
+  header #snb {
+    display: block;
+  }
+  header #snb .sub-menu {
+    position: absolute;
+    right: 5vw;
+    padding: 10px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-align: right;
+    transition: 0.4s;
+  }
+  header #snb .sub-menu.hide {
+    display: none;
+  }
+  header #snb .sub-menu li {
+    padding: 8px 0;
+    font: 16px/1 "Mynerve";
+  }
+  header #snb .sub-menu li a i {
+    margin-left: 5px;
+  }
+  figure .text p {
+    font-size: 15vw;
+  }
+}/*# sourceMappingURL=style.css.map */
